@@ -11,15 +11,15 @@ Sebutkan web server yang digunakan pada "monta.if.its.ac.id"!
 
 **Jawab :**
 
-Proses pengenalan web server Menggunakan display filter ``tcp contains monta.if.its.ac.id`` sehingga di didapatkan ``server : nginx/1.10.3\r\n``
+Proses pengenalan web server Menggunakan display filter ``tcp contains monta.if.its.ac.id`` sehingga dididapatkan ``server : nginx/1.10.3\r\n``
 ![Logo Nomer 1](/src/img/nomer1.png)
 
 ## Nomer 2 ##
-Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke website monta dan menemukan **detail topik** pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh ishaq ? 
+Ishaq sedang bingung mencari topik TA untuk semester ini , lalu ia datang ke website monta dan menemukan **detail topik** pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh Ishaq ? 
 
 **Jawab :**
 
-proses pencarian menggunakan ``http contains detailTopik`` sehingga di dapatkan hasil sebagai berikut
+Proses pencarian menggunakan ``http contains detailTopik`` sehingga didapatkan hasil sebagai berikut
 
 ![Nomer 2a](/src/img/nomer2.png)
 ![Nomer 2b](/src/img/nomer2b.png)
@@ -32,7 +32,7 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju port 80!
 
 **Jawab :**
 
-Proses filtering menggunakan ``tcp.dstport == 80`` sehingga di dapatkan hasil sebagai berikut
+Proses filtering menggunakan ``tcp.dstport == 80`` sehingga didapatkan hasil sebagai berikut
 
 ![Nomer3](/src/img/nomer3.png)
 
@@ -42,7 +42,7 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 21!
 
 **Jawab :**
 
-proses filtering menggunakan ``tcp.srcport == 21`` sehinggga di dapatkan hasil sebagai berikut 
+Proses filtering menggunakan ``tcp.srcport == 21`` sehinggga didapatkan hasil sebagai berikut 
 ![Nomer 4](/src/img/nomer4.png)
 
 ## Nomer 5 ##
@@ -51,7 +51,7 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
 
 **Jawab :**
 
-proses filtering menggunakna ``tcp.srcport == 443`` sehingga di dapatkan hasil sebagai berikut
+proses filtering menggunakna ``tcp.srcport == 443`` sehingga didapatkan hasil sebagai berikut
 ![Nomer 5](/src/img/nomer5.png)
 
 ## Nomer 6 ##
@@ -60,20 +60,20 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id !
 
 **Jawab :**
 
-1. Dilakukan proses pengecekan alamat lipi, shingga didapatkan 203.160.128.158
+1. Dilakukan proses pengecekan alamat lipi, sehingga didapatkan 203.160.128.158
     ![Nomer 6a](/src/img/Picture6a.png)
-2. alamat IP yang didapat selanjutnya dijadikan filter dengan menggunakan ``http && ip.dst == 203.160.128.158``
+2. Alamat IP yang didapat selanjutnya dijadikan filter dengan menggunakan ``http && ip.dst == 203.160.128.158``
    ![Nomer6b](/src/img/Picture6b.png)
 
 ## Nomer 7 ##
 
-Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+Filter sehingga wireshark hanya mengambil paket yang berasal dari IP kalian!
 
 **Jawab :**
 
 1. Melakukan pengecekan IP terlebih dahulu pada cmd
    ![Nomer7a](/src/img/Picture7a.png)
-2. Melakukan pengecekan ip yang menuju ``monta.if.its.ac.id``
+2. Melakukan pengecekan IP yang menuju ``monta.if.its.ac.id``
    ![Nomer7b](/src/img/Picture7b.png)
 
 ## Nomer 8 - 10 ##
@@ -88,14 +88,14 @@ Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dala
 Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas!
 
 **Jawab 8-10:**
-1. Data percakapan awal yang di dapat kurang lebih seperti pada gambar, lalu dari data di dapatkan clue untuk mencari lewat port 9002, dan menggunakan decrypt des3 menggunakan open ssl
+1. Data percakapan awal yang didapat kurang lebih seperti pada gambar, lalu dari data didapatkan clue untuk mencari lewat port 9002, dan menggunakan decrypt des3 menggunakan open ssl
    ![Picture8-10a](/src/img/Picture8-10a.png)
-2. Data di save dengan raw karena jika di format lain tidak bisa nga kwkwk
+2. Data disave dengan raw karena jika di format lain tidak bisa nga kwkwk
    ![Picture8-10b](/src/img/Picture8-10b.png)
-3. proses decrypt menggunkan ``openssl des3 -d -salt -in encrypted.des3 -out normal.txt`` sesuai dengan petunjuk yang di sarankan
-4. berdasar petunjuk password merupakan anime kembar 5 sehingga di dapatkan **nakano**
+3. Proses decrypt menggunakan ``openssl des3 -d -salt -in encrypted.des3 -out normal.txt`` sesuai dengan petunjuk yang disarankan
+4. Berdasarkan petunjuk, password merupakan anime kembar 5 sehingga didapatkan **nakano**
    ![Picture8-10c](/src/img/Picture8-10c.png)
-5. Hasil decrypt di dapatkan hasil sebagai berikut 
+5. Hasil decrypt didapatkan hasil sebagai berikut 
    ![Picture8-10c](/src/img/Picture8-10d.png)
 
  	
