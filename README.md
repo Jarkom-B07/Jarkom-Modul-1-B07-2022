@@ -92,7 +92,7 @@ Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di a
    ![Picture8-10a](/src/img/Picture8-10a.png)
 2. Data di save dengan raw karena jika di format lain tidak bisa nga kwkwk
    ![Picture8-10b](/src/img/Picture8-10b.png)
-3. roses decrypt menggunkan ``opensll des3 -d -salt -in encrypted.des3 -out normal.txt`` sesuai dengan petunjuk yang di sarankan
+3. roses decrypt menggunkan ``openssl des3 -d -salt -in encrypted.des3 -out normal.txt`` sesuai dengan petunjuk yang di sarankan
 4. berdasar petunjuk password merupakan anime kembar 5 sehingga di dapatkan **nakano**
    ![Picture8-10c](/src/img/Picture8-10c.png)
 5. Hasil decrypt di dapatkan hasil sebagai berikut 
